@@ -72,7 +72,7 @@ def Gameover():
 				pygame.display.flip()
 				pygame.mixer.music.stop()
 				Mainmenu()
-		
+
 		s.fill((255,0,0,128))
 		screen.blit(s, (0,0))
 		gameover=pygame.font.Font("resources/captureit.ttf", 50).render("GAME OVER!", 2, (255,255,255))
@@ -113,7 +113,7 @@ def Gamewin():
 				pygame.display.flip()
 				pygame.mixer.music.stop()
 				Mainmenu()
-		
+
 		s.fill((255,0,0,128))
 		screen.blit(s, (0,0))
 		gamewin=pygame.font.Font("resources/captureit.ttf", 50).render("You Win!", 2, (255,255,255))
@@ -226,7 +226,7 @@ def Mainmenu():
 		if key[pygame.K_ESCAPE]:
 			pygame.quit()
 			sys.exit()
-		
+
 		if prev_state != state:
 		 pygame.event.post(pygame.event.Event(EVENT_CHANGE_STATE, key = 0))
 		 prev_state = state
@@ -265,7 +265,7 @@ def credits():
 	me=pygame.image.load("resources/me.png")
 	me=pygame.transform.scale(me, (200, 200))
 	screen.blit(me, (440,280))
-	text = "Credits \n _ _ _ _ _ _ _ _ _ _ _ _ \n\n\n Designer \n Creator \n\n Manikiran P"
+	text = "Credits \n _ _ _ _ _ _ _ _ _ _ _ _ \n\n\n Designer /n Creator /n/n Manikiran P"
 	color = 0xa0a0a000
 	credit(text,pygame.font.Font("resources/captureit.ttf", 32),color)
 	screen.fill((0,0,0))
@@ -283,7 +283,7 @@ def credits():
 				screen.fill((0,0,0))
 				pygame.display.flip()
 				Mainmenu()
-		
+
 		pygame.display.flip()
 
 

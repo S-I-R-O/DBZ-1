@@ -1,10 +1,10 @@
 #! /usr/bin/python
 
-## \file  menu.py
-#  \brief General Menu Class
-#  \author Scott Barlow
-#  \date 2009
-#  \version 1.0.3
+## /file  menu.py
+#  /brief General Menu Class
+#  /author Scott Barlow
+#  /date 2009
+#  /version 1.0.3
 #
 #  This is a menu class written for pygame/Python.  The menu is designed to work
 #  with a program using a finite state machine (but it could also be easily
